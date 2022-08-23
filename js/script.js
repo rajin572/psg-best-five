@@ -1,30 +1,33 @@
-function addNewItems(elementID){
-    // step1 get text from selected element
+function addNewItems(elementID, buttonId){
+    // step-1 get text from selected element
     const element = document.getElementById(elementID);
     const elementValue = element.innerText
-    console.log(elementValue);
-    // step2 get the ol list and create an list
+    // step-2 get the ol and get the ol list chlidern
     const inputOl = document.getElementById('olItem');
-
     const inputOlChlids = inputOl.children.length;
-    console.log(inputOlChlids);
-    if(inputOlChlids< 5){
-        const newList = document.createElement('li');
-        // sted3 create class for the newlist
-        const newListAtr = document.createAttribute('class');
-        newListAtr.value = 'listItems';
-        newList.setAttributeNode(newListAtr)
-        // step4 added the selected element text into the new li add add tge lis into ol
-        newList.innerText = elementValue;
-        inputOl.appendChild(newList)
 
-        // step-5 update the slected number
+    // step-3 create an new li element and create an net class and set  the class into new li add elementvalue into newli
+    const newList = document.createElement('li');
+    const newListAtr = document.createAttribute('class');
+    newListAtr.value = 'listItems';
+    newList.setAttributeNode(newListAtr)
+    newList.innerText = elementValue;
+
+    // step-5 check the list chlidern lenght to add new li  
+    if(inputOlChlids< 5){
+        // step-6 add the new li into the ol list
+        inputOl.appendChild(newList);
+        // step-7 disable the click button and change it color
+        document.querySelector(buttonId).disabled = true;
+        document.querySelector(buttonId).style.backgroundColor = 'gray';
+        // step-8 update the slected number
         const selectedNumber = document.getElementById('selectedNumber');
         const selectedNumberValueStr = selectedNumber.innerText;
         const selectedNumberValue = parseFloat(selectedNumberValueStr);
         const increseselectedNumber = selectedNumberValue + 1;
-        selectedNumber.innerText = increseselectedNumber
+        selectedNumber.innerText = increseselectedNumber; 
     }
+    // step-9 if the childrens are geater then 5 then show alert
     else{
         alert('You Can Select Only 5 items')
         return
@@ -33,20 +36,21 @@ function addNewItems(elementID){
 }
 
 document.getElementById('added-messi').addEventListener('click', function(){
-    addNewItems('messi')
+    addNewItems('messi','#added-messi')
+    // disableButton()
 })
 document.getElementById('added-neymer').addEventListener('click', function(){
-    addNewItems('neymer')
+    addNewItems('neymer','#added-neymer')
 })
 document.getElementById('added-mabappy').addEventListener('click', function(){
-    addNewItems('mabappy')
+    addNewItems('mabappy','#added-mabappy')
 })
 document.getElementById('added-machado').addEventListener('click', function(){
-    addNewItems('machado')
+    addNewItems('machado','#added-machado')
 })
 document.getElementById('added-ramos').addEventListener('click', function(){
-    addNewItems('ramos')
+    addNewItems('ramos','#added-ramos')
 })
 document.getElementById('added-sanches').addEventListener('click', function(){
-    addNewItems('sanches')
+    addNewItems('sanches','#added-sanches')
 })
