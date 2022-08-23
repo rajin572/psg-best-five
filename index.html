@@ -18,7 +18,7 @@
                 <img src="images/main-header.png" alt="">
             </div>
             <div class="header-text">
-                <h1>PSG Best Five Players</h1>
+                <h1 class="mb-5">PSG Best Five Players</h1>
                 <p>Football is like life: It requires perseverance, self denial, hard work, sacrifice, dedication, and
                     respect for authority. Set your goals high, and don't stop till you get there. You fail all the
                     time. But you aren't a failure until you start blaming someone else.</p>
@@ -115,13 +115,19 @@
                 </div>
                 <div class="col-3">
                     <div class="selected-div py-5 px-4">
-                        <h3 class="mb-4 text-center">Selected- <span id="selectedNumber">0</span></h3>
+                        <div class="mb-5 text-center">
+                            <h3>Selected- <span id="selectedNumber">0</span></h3>
+                            <img src="images/Ureg-Marker.png" alt="">
+                        </div>
                         <ol id="olItem" type="1" class="text-start">
                             <!-- <li class="listItems">leomassi</li> -->
                         </ol>
                     </div>
                     <div class="calculation py-5 px-3">
-                        <h3 class="mb-4 text-center">Budget</h3>
+                        <div class="mb-5 text-center">
+                            <h3>Budget</h3>
+                            <img src="images/Ureg-Marker.png" alt="">
+                        </div>
                         <label for="per-Player" class="pe-2">Per Player</label>
                         <input id="Per-player-Price" type="text" class="input-field">
                         <button id="calculate-playerPrice" class="select-button my-3 py-2 w-100">Calculate</button>
@@ -133,14 +139,16 @@
                         <button id="calculate-totalPrice" class="select-button my-3 py-2 w-100">Calculate Total</button>
                         <div class="total">
                             <span>Total</span>
-                            <span class="number">$ <span id="totalPrice">0</span></span>
+                            <span class="number">$<span id="totalPrice">0</span></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <footer class="border-top">
+        <h5 class="text-center py-5">Copyright @ 2022 All Rights Reserved.</h5>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="js/calculate.js"></script>
