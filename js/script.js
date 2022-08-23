@@ -17,6 +17,13 @@ function addNewItems(elementID){
         // step4 added the selected element text into the new li add add tge lis into ol
         newList.innerText = elementValue;
         inputOl.appendChild(newList)
+
+        // step-5 update the slected number
+        const selectedNumber = document.getElementById('selectedNumber');
+        const selectedNumberValueStr = selectedNumber.innerText;
+        const selectedNumberValue = parseFloat(selectedNumberValueStr);
+        const increseselectedNumber = selectedNumberValue + 1;
+        selectedNumber.innerText = increseselectedNumber
     }
     else{
         alert('You Can Select Only 5 items')
