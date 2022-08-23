@@ -27,7 +27,7 @@ function addNewItems(elementID, buttonId){
         const increseselectedNumber = selectedNumberValue + 1;
         selectedNumber.innerText = increseselectedNumber; 
     }
-    // step-9 if the childrens are geater then 5 then show alert
+    // step-9 if the childrens are greater then 5 then show alert
     else{
         alert('You Can Select Only 5 items')
         return
