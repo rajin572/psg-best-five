@@ -12,15 +12,15 @@ function getElements(elementId){
 }
 
 document.getElementById('calculate-playerPrice').addEventListener('click', function(){
-    const getInputValue = getInputs('Per-player-Price')
+    const getPerPlayerPrice = getInputs('Per-player-Price')
     const getNumberValue = getElements('selectedNumber');
 
-    if(isNaN(getInputValue)){
+    if(isNaN(getPerPlayerPrice)){
         alert('please input a valid numbus')
 
     }
     else{
-        const playerCalculate = getInputValue*getNumberValue;
+        const playerCalculate = getPerPlayerPrice*getNumberValue;
         const playerPrice = document.getElementById('playerPrice');
         playerPrice.innerText = playerCalculate;
     }

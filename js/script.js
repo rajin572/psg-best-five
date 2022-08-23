@@ -29,7 +29,7 @@ function addNewItems(elementID, buttonId){
     }
     // step-9 if the childrens are greater then 5 then show alert
     else{
-        alert('You Can Select Only 5 items')
+        alert('You Can Select Only 5 Players')
         return
     }
 
