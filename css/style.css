@@ -1,56 +1,68 @@
-body{
+body {
     background-color: rgba(21, 21, 21, 1);
     color: white;
     margin: 0%;
 }
-.header-section{
+
+.header-section {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.header-main{
+
+.header-main {
     background-color: rgba(0, 0, 0, 1);
 }
-.header-text{
-    padding:0px 50px;
-}
-.header-image{
-    padding-top: 150px;
-}
-.header-image-sec{
+
+.header-text {
     padding: 0px 50px;
 }
-.header-text h1{
+
+.header-image {
+    padding-top: 150px;
+}
+
+.header-image-sec {
+    padding: 0px 50px;
+}
+
+.header-text h1 {
     font-size: 50px;
     color: rgba(255, 94, 25, 1);
 }
 
 
 
-.main-main{
+.main-main {
     padding: 70px 0px;
 }
-.card{
+
+.card {
     background-color: rgba(13, 13, 13);
 }
-.select-button{
+
+.select-button {
     background-color: rgba(1, 81, 150, 1);
     color: white;
 }
+
 .selected-div {
     min-height: 55vh;
     background-color: rgba(13, 13, 13);
 }
-.calculation{
+
+.calculation {
     margin-top: 50px;
     min-height: 50vh;
     background-color: rgba(13, 13, 13);
 }
-.listItems{
-    padding:15px 10px;
+
+.listItems {
+    padding: 15px 10px;
 }
-.input-field{
+
+.input-field {
     background-color: rgba(13, 13, 13);
     color: white;
     display: inline-block;
@@ -59,11 +71,13 @@ body{
     outline: none;
     border: 1px solid white;
 }
-.total{
+
+.total {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
 }
-.number{
+
+.number {
     color: rgba(255, 94, 25, 1);
 }
