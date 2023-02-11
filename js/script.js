@@ -1,4 +1,4 @@
-function addNewItems(elementID, buttonId){
+function addNewItems(elementID, buttonId) {
     // step-1 get text from selected element
     const element = document.getElementById(elementID);
     const elementValue = element.innerText
@@ -14,7 +14,7 @@ function addNewItems(elementID, buttonId){
     newList.innerText = elementValue;
 
     // step-5 check the list chlidern lenght to add new li  
-    if(inputOlChlids< 5){
+    if (inputOlChlids < 5) {
         // step-6 add the new li into the ol list
         inputOl.appendChild(newList);
         // step-7 disable the click button and change it color
@@ -25,32 +25,32 @@ function addNewItems(elementID, buttonId){
         const selectedNumberValueStr = selectedNumber.innerText;
         const selectedNumberValue = parseFloat(selectedNumberValueStr);
         const increseselectedNumber = selectedNumberValue + 1;
-        selectedNumber.innerText = increseselectedNumber; 
+        selectedNumber.innerText = increseselectedNumber;
     }
     // step-9 if the childrens are greater then 5 then show alert
-    else{
+    else {
         alert('You Can Select Only 5 Players')
         return
     }
 
 }
 
-document.getElementById('added-messi').addEventListener('click', function(){
-    addNewItems('messi','#added-messi')
+document.getElementById('added-messi').addEventListener('click', function () {
+    addNewItems('messi', '#added-messi')
     // disableButton()
 })
-document.getElementById('added-neymer').addEventListener('click', function(){
-    addNewItems('neymer','#added-neymer')
+document.getElementById('added-neymer').addEventListener('click', function () {
+    addNewItems('neymer', '#added-neymer')
 })
-document.getElementById('added-mabappy').addEventListener('click', function(){
-    addNewItems('mabappy','#added-mabappy')
+document.getElementById('added-mabappy').addEventListener('click', function () {
+    addNewItems('mabappy', '#added-mabappy')
 })
-document.getElementById('added-machado').addEventListener('click', function(){
-    addNewItems('machado','#added-machado')
+document.getElementById('added-machado').addEventListener('click', function () {
+    addNewItems('machado', '#added-machado')
 })
-document.getElementById('added-ramos').addEventListener('click', function(){
-    addNewItems('ramos','#added-ramos')
+document.getElementById('added-ramos').addEventListener('click', function () {
+    addNewItems('ramos', '#added-ramos')
 })
-document.getElementById('added-sanches').addEventListener('click', function(){
-    addNewItems('sanches','#added-sanches')
+document.getElementById('added-sanches').addEventListener('click', function () {
+    addNewItems('sanches', '#added-sanches')
 })
